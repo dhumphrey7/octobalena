@@ -31,7 +31,7 @@ RUN pip install --no-cache-dir https://github.com/DynamicDevices/pybonjour-pytho
 RUN pip3 install supervisor
 
 # Install Python dependencies for MattaCloud
-RUN pip3 install aiohttp aiortc numpy opencv-python
+RUN pip3 aiohttp==3.6.2 aiortc==0.9.7 numpy==1.19.1 opencv-python==4.4.0.40
 
 # Install paho mqtt for power control
 RUN pip3 install paho-mqtt
